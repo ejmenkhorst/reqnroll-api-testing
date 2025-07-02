@@ -1,4 +1,4 @@
-# reqnroll-api-testing
+# Reqnroll-api-testing
 
 A portfolio project about BDD API testing with a selection of .NET based testing frameworks.
 
@@ -12,7 +12,7 @@ Table of Contents
 
 The application under test will be the [restful-booker-platform](https://github.com/mwinteringham/restful-booker-platform) written by Mark Winteringham.
 
-This application has a UI and API which can be thorougly tested.  
+This application has a UI and API which can be thoroughly tested.  
 For demonstration purposes we use the deployed instance online available [Shady Meadows B&B](https://automationintesting.online)
 
 ## Prerequisites
@@ -23,7 +23,7 @@ For demonstration purposes we use the deployed instance online available [Shady 
 
 ### Vscode setup
 
-To make developping the feature files and implementation of the steps a breeze please configure your IDE as stated in the [online documentation](https://docs.reqnroll.net/latest/installation/setup-ide.html#setup-visual-studio-code).  
+To make developing the feature files and implementation of the steps a breeze please configure your IDE as stated in the [online documentation](https://docs.reqnroll.net/latest/installation/setup-ide.html#setup-visual-studio-code).  
 With this setup you can now easily jump between feature files and step definitions.
 
 ```json
