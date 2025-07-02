@@ -1,14 +1,30 @@
 namespace reqnroll_api_testing.StepDefinitions;
+using Microsoft.Extensions.Configuration;
 using Reqnroll;
+using static RestAssured.Dsl;
 
 [Binding]
 public class BookingStepDefinitions
 {
+    private readonly string _baseUrl;
+
+    public BookingStepDefinitions()
+    {
+        var config = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json")
+            .Build();
+        _baseUrl = config["BookingApi:BaseUrl"]!;
+    }
+
     [Given("the booking service is available")]
     public async Task GivenTheBookingServiceIsAvailable()
     {
-        // TODO: Implement check for booking service availability
-        await Task.CompletedTask;
+        // Check if the booking service is available by sending a GET request to the endpoint
+            Given()
+            .When()
+            .Get($"{_baseUrl}")
+            .Then()
+            .StatusCode(200);
     }
 
     [When("the user provides valid room and guest details")]
