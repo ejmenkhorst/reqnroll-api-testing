@@ -17,9 +17,9 @@ For demonstration purposes we use the deployed instance online available [Shady 
 
 ## Prerequisites
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download)
+- [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com) with the C# and Cucumber (Gherkin) extensions
-- [Setup vscode IDE](#vscode-setup)
+- [Setup VSCODE IDE](#vscode-setup)
 
 ### Vscode setup
 
@@ -43,13 +43,12 @@ With this setup you can now easily jump between feature files and step definitio
   },
   "cucumber.glue": [
     // sets the location of the step definition classes
-    "${workspaceFolder}/StepDefinitions/*.cs"
+    "StepDefinitions/*.cs"
   ],
   "cucumber.features": [
     // sets the location of the feature files
-    "src/test/**/*.feature",
-    "Features/**/*.feature"
-  ],
+    "Features/*.feature"
+],
 }
 ```
 
